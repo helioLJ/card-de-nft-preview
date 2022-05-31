@@ -40,6 +40,13 @@ body {
     padding: 1.25rem;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .container {
     padding: 1.25rem;
     background-color: var(--very-dark-blue-card-BG);
@@ -74,13 +81,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.container h2 {
+.container h1 {
     color: var(--white);
     margin: 1rem 0.5rem 0.5rem 0;
     transition: 0.3s;
 }
 
-.container h2:hover {
+.container h1:hover {
     color: var(--cyan);
     cursor: pointer;
 }
@@ -138,11 +145,4 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media(min-width: 500px) {
-    .container {
-        width: 450px;
-        margin: 0 auto 1rem;
-    }
 }
